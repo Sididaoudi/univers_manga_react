@@ -40,7 +40,7 @@ function Results() {
               return (
                 <div key={manga.id}>
                    <div key={manga.id}>
-                  <Link to={`/manga/${manga.id}`}> {/* Ajouter le lien ici */}
+                  <Link to={`/manga/${manga.id}`}> 
                     <div className="card">
                       <img src={imageUrl} alt={manga.title} />
                       <h3>{manga.title}</h3>

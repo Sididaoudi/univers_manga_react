@@ -6,10 +6,8 @@ import { fr } from 'date-fns/locale';
 
 const MangaCard = ({ title, thumbnail, id, releaseDate }) => {
 
-  
-  const imageUrl = `http://localhost:8000${thumbnail}`;
-  
-  
+const imageUrl = `http://localhost:8000/${thumbnail}`;  // permet d'afficher les images dans la page Release et le composant MangaCard
+
   const releaseDateParsed = releaseDate ? new Date(releaseDate) : null;
   const isValidDate = releaseDateParsed && !isNaN(releaseDateParsed.getTime());
 
@@ -19,7 +17,7 @@ const MangaCard = ({ title, thumbnail, id, releaseDate }) => {
 
   return (
     <div className="card">
-      <img src={imageUrl} alt={title} />
+     <img src={imageUrl} alt={title} />
       <h3 className='card-title'>{title}</h3>
        <div className="card-date">
        {" "}

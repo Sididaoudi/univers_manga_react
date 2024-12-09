@@ -47,7 +47,7 @@ const PlanningOfTheWeek = () => {
       </div>
       <div className="more-Btn">
           <button>
-            <Link to="/Release" >Planning des sorties</Link>
+            <Link to="/Release">Planning des sorties</Link>
           </button>
       </div>
     </section>

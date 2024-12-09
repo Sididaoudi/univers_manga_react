@@ -78,9 +78,10 @@ const MangaDetails = ({ thumbnail }) => {
       <div className="single-product-content">
         <div className="single-product-left">
           <div className="product-img">
-            <img src={`http://localhost:8000/images/manga/${manga.thumbnail}`} />
+            <img
+              src={`http://localhost:8000/images/manga/${manga.thumbnail}`}
+            />
           </div>
-          
 
           {/* <div className="buttons">
             <div className="buy-btn">
@@ -105,7 +106,16 @@ const MangaDetails = ({ thumbnail }) => {
             <section className="product-info-right">
               <ul>
                 <li>{manga.originalName || "Non spécifié"}</li>
-                <li>{mangaka.name}</li>
+                <li>
+                  {manga.mangakas && manga.mangakas.length > 0
+                    ? manga.mangakas.map((mangaka, index) => (
+                        <span key={index}>
+                          {mangaka.name}
+                          {index < manga.mangakas.length - 1 ? ", " : ""}
+                        </span>
+                      ))
+                    : "Auteur non spécifié"}
+                </li>
                 <li>
                   {manga.genre?.map((genre, index) => (
                     <span key={index}>
@@ -123,12 +133,12 @@ const MangaDetails = ({ thumbnail }) => {
           </div>
         </div>
       </div>
-       <section className="single-product-down">
-          <article className="product-resume">
+      <section className="single-product-down">
+        <article className="product-resume">
           <p>Résumé : </p>
-          <p>{manga.synopsis }</p>
-          </article>
-       </section>
+          <p>{manga.synopsis}</p>
+        </article>
+      </section>
     </div>
   );
 };
