@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.89dfc71b.css",
-    "main.js": "/static/js/main.3296eba6.js",
-    "index.html": "/index.html",
-    "main.89dfc71b.css.map": "/static/css/main.89dfc71b.css.map",
-    "main.3296eba6.js.map": "/static/js/main.3296eba6.js.map"
+    "main.css": "/univers_manga_react/static/css/main.89dfc71b.css",
+    "main.js": "/univers_manga_react/static/js/main.3296eba6.js",
+    "index.html": "/univers_manga_react/index.html",
+    "main.89dfc71b.css.map": "/univers_manga_react/static/css/main.89dfc71b.css.map",
+    "main.3296eba6.js.map": "/univers_manga_react/static/js/main.3296eba6.js.map"
   },
   "entrypoints": [
     "static/css/main.89dfc71b.css",
